@@ -1,0 +1,26 @@
+
+<form action="mailto:mail@mail.com" method="POST" enctype="text/plain">
+Nombre: <input type="text" name="nombre" size="25" maxlength="50">
+<br><br>
+Apellidos: <input type="text" name="apellidos" size="35" maxlength="100">
+<br><br>
+Email: <input type="text" value="@" name="correo" size="40" maxlength="100">
+<br><br>
+Localidad: <input type="text" name="poblacion" size="15" maxlength="50">
+<br><br>
+<table width="50%" border="0" cellspacing="0" cellpadding="10">
+    <tr>
+        <td>Edad: <br>
+            <input type="radio" name="edad" value="020"> 0 - 20 <br>
+            <input type="radio" name="edad" value="2040"> 20 - 40 <br>
+            <input type="radio" name="edad" value="4060"> 40 - 60 <br>
+            <input type="radio" name="edad" value="60100"> 60 - 100
+        </td>
+        <td>Cual es tu animal favorito: <br>
+            <input type="text" name="animal"> Perro <br>
+            <input type="text" name="animal"> Gato <br>
+            <input type="text" name="animal"> Caballo <br>
+            <input type="text" name="animal"> Otros
+        </td>
+    </tr>
+</table>
