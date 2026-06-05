@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+background-image: url("../rsc/imagenes/Aatrox_0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeart;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-botton: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #111827;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: none;
+    display: block;
+}
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.campeon {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
