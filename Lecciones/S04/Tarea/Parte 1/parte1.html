@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parte 1 - Tablas y formularios</title>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #5c5757;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #645a5a;
+}
+
+tbody tr:hover {
+    background-color: #705f5f;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: blue;
+    outline: none;
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 10px;
+}
+</style>
+</head>
+<link rel="stylesheet" href="css/estilos.css" />
+<body>
+<h2>Tabla de estudiantes</h2>
+<table>
+<caption>Listado de notas del curso</caption>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Nota parcial</th>
+<th>Nota final</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Ana Mora</td><td>88</td><td>91</td><td>Aprobado</td></tr>
+<tr><td>Luis Brenes</td><td>72</td><td>65</td><td>Aprobado</td></tr>
+<tr><td>Sofía Castro</td><td>55</td><td>48</td><td>Reprobado</td></tr>
+<tr><td>Mario Ruiz</td><td>90</td><td>95</td><td>Aprobado</td></tr>
+<tr><td>Elena Vargas</td><td>61</td><td>70</td><td>Aprobado</td></tr>
+</tbody>
+</table>
+<h2>Formulario de contacto</h2>
+<form>
+<label for="nombre">Nombre completo</label>
+<input type="text" id="nombre" name="nombre" required
+placeholder="Ingrese su nombre">
+<label for="correo">Correo electrónico</label>
+<input type="email" id="correo" name="correo" required
+placeholder="ejemplo@correo.com">
+<label for="mensaje">Mensaje</label>
+<textarea id="mensaje" name="mensaje" rows="4"
+placeholder="Escriba su mensaje aquí..."></textarea>
+<button type="submit">Enviar</button>
+</form>
+</body>
+</html>
