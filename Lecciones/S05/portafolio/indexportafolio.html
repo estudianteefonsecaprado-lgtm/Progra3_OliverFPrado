@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Digital - Oliver Josiel F, Prado</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a href="#perfil" class="navbar-brand">Mi Portafolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Mostrar u Ocultar el menu de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#perfil" class="nav-link">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#habilidades" class="nav-link">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a href="#proyecto" class="nav-link">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacto" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="height: 70px"></div>
+
+    <main class="container">
+      <!-- Perfil -->
+      <section class="perfil-hero text-center py-5" id="perfil">
+        <div class="avatar-contenedor mx-auto mb-4">
+          <img src="./rsc/Imagen.jpg"
+          alt="Foto de Perfil"
+            class="avatar-imagen"
+          />
+        </div>
+        <h1 class="nombre-perfil">Oliver Josiel Fonseca Prado</h1>
+        <p class="titulo-profesional">Estudiante de ingeniería en Informática</p>
+        <p class="descripcion-perfil mx-auto">
+          Estudiante de Ingeniería Informática, apasionado por la tecnología,
+    el desarrollo de software y el aprendizaje continuo. Disfruto crear
+    proyectos que me permitan mejorar mis conocimientos y experiencia.
+</p>
+        </p>
+        <div class="redes-social mt-3">
+          <a href="#" class="icono-red" aria-label="Github">GH</a>
+          <a href="#" class="icono-red" aria-label="LinkedIn">IN</a>
+          <a href="#" class="icono-red" aria-label="Correo">@</a>
+        </div>
+      </section>
+
+      <section id="habilidades" class="my-5">
+        <h2 class="titulo-seccion mb-4">Habilidades Tecnicas</h2>
+
+        <div class="barra-habilidad" data-nivel="90">
+          <span class="barra-habilidad__etiqueta">HTML & CSS3</span>
+          <div class="barra-habilidad__pista">
+            <div class="barra-habilidad__relleno" style="--nivel: 90%"></div>
+          </div>
+        </div>
+
+        <div class="barra-habilidad" data-nivel="75">
+          <span class="barra-habilidad__etiqueta">JavaScript</span>
+          <div class="barra-habilidad__pista">
+            <div class="barra-habilidad__relleno" style="--nivel: 75%"></div>
+          </div>
+        </div>
+
+        <div class="barra-habilidad" data-nivel="95">
+          <span class="barra-habilidad__etiqueta">.NET CORE</span>
+          <div class="barra-habilidad__pista">
+            <div class="barra-habilidad__relleno" style="--nivel: 95%"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyecto" class="my5">
+        <h2 class="titulo-seccion mb-4">Proyectos Destacados</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-proyecto">
+              <h3>Sitio WEB</h3>
+              <p>
+                Pagina construida con HTML5 semanticamente correcta y con
+                formularios validados.
+              </p>
+              <span class="etiqueta-proyectos">HTML5</span>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-proyecto">
+              <h3>Layout Responsive</h3>
+              <p>
+                Interfaz CSS3 adaptada a diferentes dispositivos utilizando
+                CSS3, Flexbox, y medias queries.
+              </p>
+              <span class="etiqueta-proyectos">CSS3</span>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-proyecto">
+              <h3>Sistema de restaurante</h3>
+              <p>
+                Sistema de control de restaurantes, para comandas, facturas y
+                otros.
+              </p>
+              <span class="etiqueta-proyectos">Blazor</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="my-5" id="contacto">
+        <h2 class="titulo-seccion" mb-4>Contactame</h2>
+        <form novalidate class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="nombre" class="form-label campo-requerido"
+              >Nombre Completo</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              class="campo-formulario form-control"
+              required
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label for="correo" class="form-label campo-requerido"
+              >Correo Electronico</label
+            >
+            <input
+              type="email"
+              id="correo"
+              class="campo-formulario form-control"
+              required
+            />
+          </div>
+
+          <div class="col-12">
+            <label for="mensaje" class="form-label campo-requerido"
+              >Mensaje (Opcional)</label
+            >
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              class="campo-formulario form-control"
+              rows="3"
+              placeholder="Escribir tu mensaje aquí..."
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+          </div>
+        </form>
+      </section>
+    </main>
+<footer>
+    <p>
+        Portafolio creado en el curso de programación de computadoras III - UMCA
+    </p>
+</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+ 
