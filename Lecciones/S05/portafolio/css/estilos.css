@@ -1,0 +1,142 @@
+:root {
+    --color-principal: #1a1a1a;
+    --color-medio: #555555;
+    --color-claro: #aaaaaa;
+    --color-fondo: #f4f4f4;
+    --color-acento: #2f3c7e;
+    --radio-borde: 8px;
+    --sombra-suave: 0 4px 14px rgba(0, 0, 0, 0.18);
+    --sombra-fuerte: 0 4px 14px rgba(0, 0, 0, 0.26);
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--color-principal);
+}
+
+::selection {
+    background: var(--color-principal);
+    color: #ffffff;
+}
+.titulo-seccion {
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: relative;
+}
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 4px;
+    background: var(--color-acento);
+    margin-top: 8px;
+}
+.pie-pagina {
+    background: var(--color-principal);
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+@keyframes entradaPerfil {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    .perfil-hero {
+    opacity: 0;
+    animation: entradaPerfil 0.8s ease-out 0.1s 1 forwards;
+}
+
+.avatar-contenedor {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.avatar-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: var(--sombra-suave);
+
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.avatar-contenedor::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 2px solid var(--color-acento);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.avatar-contenedor:hover .avatar-imagen {
+    transform: scale(1.05);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.avatar-contenedor:hover::after {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.nombre-perfil {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.titulo-profesional {
+    color: var(--color-acento);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.descripcion-perfil {
+    max-width: 480px;
+    color: var(--color-medio);
+}
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.icono-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--color-fondo);
+    color: var(--color-principal);
+    font-size: 0.85rem;
+    text-decoration: none;
+    border: 1.5px solid var(--color-claro);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.25s ease;
+}
+
+.icono-red:hover {
+    background-color: var(--color-acento);
+    color: #ffffff;
+    transform: translateY(-4px);
+}
+
+.icono-red:active {
+    transform: translateY(-1px) scale(0.96);
+}
