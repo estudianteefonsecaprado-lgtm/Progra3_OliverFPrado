@@ -1,0 +1,53 @@
+
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* La tarjeta separa un poco el contenido del borde superior */
+#tarjeta {
+  margin-top: 1rem;
+}
+
+/*
+   Modo oscuro
+ */
+body.modo-oscuro {
+  background-color: #1a1a1a !important;
+  color: #f1f1f1;
+}
+
+body.modo-oscuro #tarjeta {
+  background-color: #262626;
+  color: #f1f1f1;
+}
+
+body.modo-oscuro .text-secondary {
+  color: #b5b5b5 !important;
+}
+
+body.modo-oscuro .list-group-item {
+  background-color: transparent;
+  color: #f1f1f1;
+  border-color: #3a3a3a;
+}
+
+body.modo-oscuro .form-control {
+  background-color: #303030;
+  color: #f1f1f1;
+  border-color: #4a4a4a;
+}
+  body.modo-oscuro .form-control::placeholder {
+    color: #fff;
+  }
+
+/* 
+   Estados de validacion del formulario controlados por JavaScript
+ */
+.mensaje-valido {
+  color: #198754;
+}
+
+.mensaje-error {
+  color: #dc3545;
+}
+ 
