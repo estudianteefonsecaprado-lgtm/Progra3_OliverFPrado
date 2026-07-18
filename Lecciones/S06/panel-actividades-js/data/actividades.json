@@ -1,0 +1,41 @@
+[
+{
+"id": 101,
+"titulo": "Club de algoritmos prácticos",
+"categoria": "Programación",
+"fecha": "2026-08-03",
+"cupo": 25,
+"inscritos": 10,
+"facilitador": {
+"nombre": "Andrés Solano",
+"correo": "andres.solano@ejemplo.com"
+},
+"recursos": ["pizarra", "computadora", "editor de código"]
+},
+{
+"id": 102,
+"titulo": "Taller de prototipado web",
+"categoria": "Web",
+"fecha": "2026-08-05",
+"cupo": 22,
+"inscritos": 14,
+"facilitador": {
+"nombre": "Carolina Rojas",
+"correo": "carolina.rojas@ejemplo.com"
+},
+"recursos": ["navegador", "Figma", "editor de código"]
+},
+{
+"id": 103,
+"titulo": "Laboratorio de consultas SQL",
+"categoria": "Bases de datos",
+"fecha": "2026-08-09",
+"cupo": 20,
+"inscritos": 7,
+"facilitador": {
+"nombre": "Diego Araya",
+"correo": "diego.araya@ejemplo.com"
+},
+"recursos": ["SQL Server", "datos de prueba"]
+}
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Mantenimiento de la Plataforma Virtual",
+    "fecha": "2026-07-25",
+    "prioridad": "alta",
+    "descripcion": "El campus virtual estará fuera de servicio por actualización de servidores desde las 22:00 horas."
+  },
+  {
+    "titulo": "Inicio de Matrícula - IV Cuatrimestre",
+    "fecha": "2026-08-01",
+    "prioridad": "media",
+    "descripcion": "Se habilita el proceso de matrícula ordinaria para el próximo periodo académico."
+  },
+  {
+    "titulo": "Convocatoria a Becas Socioeconómicas",
+    "fecha": "2026-07-30",
+    "prioridad": "alta",
+    "descripcion": "Último día para entregar la documentación requerida en la oficina de Bienestar Estudiantil."
+  },
+  {
+    "titulo": "Taller Gratuito de Habilidades Blandas",
+    "fecha": "2026-08-05",
+    "prioridad": "baja",
+    "descripcion": "Inscripciones abiertas para el seminario web sobre liderazgo y comunicación asertiva."
+  },
+  {
+    "titulo": "Entrega de Notas del Primer Parcial",
+    "fecha": "2026-07-28",
+    "prioridad": "media",
+    "descripcion": "Los docentes subirán los reportes oficiales de calificaciones al sistema académico."
+  }
+]

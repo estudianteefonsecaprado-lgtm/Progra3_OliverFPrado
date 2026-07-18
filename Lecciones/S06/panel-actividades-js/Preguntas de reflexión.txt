@@ -1,0 +1,18 @@
+1. ¿Qué ventaja tiene trabajar con un proyecto nuevo cuando se está aprendiendo un tema técnico?
+Permite enfocarse únicamente en el tema de estudio (en este caso, JavaScript) desde cero, sin arrastrar códigos viejos, enredos o errores de proyectos anteriores que puedan confundir el aprendizaje.
+
+2. ¿Por qué conviene separar los datos en estructuras como objetos, arreglos o archivos JSON?
+Porque hace que el código sea ordenado, modular y limpio. Separa la información real del diseño visual (HTML/CSS), facilitando modificar o actualizar los datos en el futuro sin peligro de romper la página web.
+
+3. Explica con un ejemplo propio la diferencia entre una operación síncrona y una operación asíncrona.
+Síncrona (Bloqueante): Hacer fila en la fotocopiadora de la universidad. Tienes que esperar a que la persona de adelante termine por completo para que sea tu turno; no puedes hacer nada más mientras tanto.
+
+Asíncrona (No bloqueante): Pedir un café en la cafetería. Te dan un tique de espera y, mientras preparan tu café, tú puedes ir buscando mesa, revisar el celular o adelantar apuntes. No te quedas congelado esperando.
+
+4. ¿Qué tipo de información sí guardarías en LocalStorage y qué información nunca deberías guardar ahí?
+Sí guardaría: Preferencias visuales del usuario (como el modo oscuro/claro o la vista cómoda) o filtros que el usuario usó por última vez.
+
+Nunca guardaría: Datos sensibles o privados como contraseñas de cuentas, datos de tarjetas de crédito o información personal confidencial, ya que el LocalStorage no tiene cifrado y es accesible desde el navegador.
+
+5. ¿Qué parte del panel de actividades te resultó más desafiante: DOM, eventos, JSON, asincronía o LocalStorage? Justifica tu respuesta.
+La asincronía, porque coordinar que una función espere la respuesta de internet mediante una promesa (fetch, async/await) sin que detenga el resto de los elementos visuales de la página requiere un cambio de lógica mental diferente a la programación lineal a la que venía acostumbrado.
