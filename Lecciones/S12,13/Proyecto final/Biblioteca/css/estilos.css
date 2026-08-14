@@ -1,0 +1,545 @@
+/*
+==============================================================
+Proyecto Final - Programación III
+Sistema de Gestión de Biblioteca
+--------------------------------------------------------------
+Archivo: estilos.css
+
+Descripción:
+Hoja de estilos principal del sistema.
+
+Autor: Oliver Fonseca Prado
+Universidad Castro Carazo
+==============================================================
+*/
+
+
+/*=============================================================
+Configuración general
+=============================================================*/
+
+body{
+
+    background:#eef3f8;
+
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+
+    color:#243447;
+
+}
+
+
+/*=============================================================
+Barra de navegación
+=============================================================*/
+
+.navbar{
+
+    background:#204b63 !important;
+
+}
+
+.navbar-brand{
+
+    font-size:1.35rem;
+
+    font-weight:600;
+
+}
+
+.bi-book-half{
+
+    color:#8fd3ff;
+
+}
+
+
+/*=============================================================
+Tarjetas
+=============================================================*/
+
+.card{
+
+    border:none;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+}
+
+
+/*=============================================================
+Títulos
+=============================================================*/
+
+h1,
+h2,
+h3{
+
+    color:#204b63;
+
+    font-weight:700;
+
+}
+
+
+/*=============================================================
+Tablas
+=============================================================*/
+
+.table{
+
+    background:white;
+
+}
+
+.table-dark{
+
+    background:#263238 !important;
+
+}
+
+.table th{
+
+    vertical-align:middle;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+    padding: 14px;
+}
+
+
+/*=============================================================
+Portadas de libros
+=============================================================*/
+
+.img-portada{
+
+    width:65px;
+
+    height:95px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+    border:1px solid #cfd8dc;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+
+}
+
+
+/*=============================================================
+Enlaces
+=============================================================*/
+
+a{
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+
+/*=============================================================
+Botones generales
+=============================================================*/
+
+.btn{
+
+    border-radius:8px;
+
+    transition:.25s;
+
+    font-weight:500;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-1px);
+
+}
+
+
+/*=============================================================
+Botón Agregar
+=============================================================*/
+
+.btn-success{
+
+    background:#2b5d7a;
+
+    border-color:#2b5d7a;
+
+}
+
+.btn-success:hover{
+
+    background:#244f68;
+
+    border-color:#244f68;
+
+}
+
+
+/*=============================================================
+Botón Editar
+=============================================================*/
+
+.btn-warning{
+
+    background:#6c8aa0;
+
+    border-color:#6c8aa0;
+
+    color:white;
+
+}
+
+.btn-warning:hover{
+
+    background:#5b778b;
+
+    border-color:#5b778b;
+
+    color:white;
+
+}
+
+
+/*=============================================================
+Botón Eliminar
+=============================================================*/
+
+.btn-danger{
+
+    background:#7b8794;
+
+    border-color:#7b8794;
+
+}
+
+.btn-danger:hover{
+
+    background:#67737f;
+
+    border-color:#67737f;
+
+}
+
+
+/*=============================================================
+Botón Volver
+=============================================================*/
+
+.btn-secondary{
+
+    background:#95a5b0;
+
+    border-color:#95a5b0;
+
+}
+
+.btn-secondary:hover{
+
+    background:#85939d;
+
+    border-color:#85939d;
+
+}
+
+
+/*=============================================================
+Botones del menú principal
+=============================================================*/
+
+.btn-libros{
+
+    background:#2b5d7a;
+
+    color:white;
+
+}
+
+.btn-libros:hover{
+
+    background:#244f68;
+
+    color:white;
+
+}
+
+.btn-autores{
+
+    background:#426b86;
+
+    color:white;
+
+}
+
+.btn-autores:hover{
+
+    background:#365a72;
+
+    color:white;
+
+}
+
+.btn-categorias{
+
+    background:#5d7d92;
+
+    color:white;
+
+}
+
+.btn-categorias:hover{
+
+    background:#4d6b80;
+
+    color:white;
+
+}
+
+/*=============================================================
+Encabezados de tarjetas
+=============================================================*/
+
+.card-header-personalizado{
+
+    background-color: #2b5d7a;
+
+    color: #ffffff;
+
+}
+
+.card-header-personalizado h1,
+.card-header-personalizado h2,
+.card-header-personalizado h3,
+.card-header-personalizado h4,
+.card-header-personalizado h5,
+.card-header-personalizado h6{
+
+    color: #ffffff;
+
+    margin: 0;
+
+    font-weight: bold;
+
+}
+
+/*=============================================================
+Mejoras visuales para tablas
+=============================================================*/
+
+.table{
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+.table th{
+
+    background:#263238;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    text-align:left;
+
+    vertical-align:middle;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+    padding:16px 12px;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f5f9fc;
+
+}
+
+
+/*=============================================================
+Columnas de tablas
+=============================================================*/
+
+th:first-child,
+td:first-child{
+
+    width:70px;
+
+    text-align:center;
+
+}
+
+.columna-nombre{
+
+    width:220px;
+
+    font-weight:500;
+
+}
+
+.columna-acciones{
+
+    width:190px;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+}
+
+
+/*=============================================================
+Botones de acciones
+=============================================================*/
+
+.columna-acciones .btn{
+
+    min-width:72px;
+
+    margin:2px;
+
+}
+
+
+/*=============================================================
+Portadas
+=============================================================*/
+
+.img-portada{
+
+    width:65px;
+
+    height:95px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+    border:1px solid #cfd8dc;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+
+}
+
+/*=============================================================
+Campos de formulario
+=============================================================*/
+
+.form-control,
+.form-select{
+
+    border-radius:8px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#2b5d7a;
+
+    box-shadow:0 0 0 .2rem rgba(43,93,122,.20);
+
+}
+
+
+/*=============================================================
+Separadores
+=============================================================*/
+
+hr{
+
+    border-color:#d6e1e8;
+
+}
+
+/*=============================================================
+Responsive
+=============================================================*/
+
+@media (max-width: 768px){
+
+    h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .btn{
+
+        font-size:.9rem;
+
+    }
+
+    .img-portada{
+
+        width:55px;
+
+        height:80px;
+
+    }
+
+}
+
+/*=============================================================
+Efecto de clic
+=============================================================*/
+
+.click-efecto{
+
+   position: absolute;
+   
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+    animation: aparecer 1.3s ease-out forwards;
+
+    font-size: 28px;
+
+    z-index: 9999;
+
+}
+
+@keyframes aparecer{
+
+    0%{
+
+        opacity:1;
+
+        transform:translate(-50%, -50%) scale(.5);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translate(-50%, -120px) scale(1.6) rotate(20deg);
+
+    }
+
+}

@@ -1,0 +1,87 @@
+/* ===========================
+   Estilos generales
+=========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===========================
+   Títulos
+=========================== */
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* ===========================
+   Botones
+=========================== */
+
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #0d6efd;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+}
+
+/* ===========================
+   Tablas
+=========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0d6efd;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* ===========================
+   Formularios
+=========================== */
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
